@@ -4,7 +4,7 @@ from django.test import TestCase
 
 # Test for Forms models here
 
-class RenewBookFormTest(self):
+class RenewBookFormTest(TestCase):
 
     def test_renew_book_in_past(self):
 
