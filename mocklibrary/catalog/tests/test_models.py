@@ -48,6 +48,6 @@ class AuthorModelTest(TestCase):
         self.assertEquals(max_length, 150)
 
     #this test will fail if url conf not setting in
-    #def test_get_absolute_url(self):
-    #    author = Author.objects.get(id=1)
-    #    self.assertEquals(author.get_absolute_url(), '/catalog/author/')
+    def test_get_absolute_url(self):
+        author = Author.objects.get(id=1)
+        self.assertEquals(author.get_absolute_url(), '/catalog/authors/')
