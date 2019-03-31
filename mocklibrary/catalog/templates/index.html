@@ -3,12 +3,24 @@
 {% block content %}
   <h1>Local Library Home</h1>
   <p>Local Library Homepage<em></em></p>
-  <h2>Dynamic content</h2>
+  <h2>Content</h2>
   <p>The library has the following record counts:</p>
-  <ul>
-    <li><strong>Books:</strong> {{ num_books }}</li>
-    <li><strong>Copies:</strong> {{ num_instances }}</li>
-    <li><strong>Copies available:</strong> {{ num_instances_availability }}</li>
-    <li><strong>Authors:</strong> {{ num_authors }}</li>
+  <ul class="list-group list-group-flush">
+    <li class="list-group-item d-flex justify-content-between align-items-center list-group-item-action">
+      <strong>Books:</strong>
+      <span class="badge badge-primary badge-pill">{{ num_books }}</span>
+    </li>
+    <li class="list-group-item d-flex justify-content-between align-items-center list-group-item-action">
+      <strong>Copies:</strong>
+      <span class="badge badge-primary badge-pill">{{ num_instances }}</span>
+    </li>
+    <li class="list-group-item d-flex justify-content-between align-items-center list-group-item-action">
+      <strong>Copies available:</strong>
+      <span class="badge badge-primary badge-pill">{{ num_instances_availability }}</span>
+    </li>
+    <li class="list-group-item d-flex justify-content-between align-items-center list-group-item-action">
+      <strong>Authors:</strong>
+      <span class="badge badge-primary badge-pill">{{ num_authors }}</span>
+    </li>
   </ul>
 {% endblock content %}
